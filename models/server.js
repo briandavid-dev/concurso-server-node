@@ -17,7 +17,8 @@ class Server {
     // config de sockets
 
     this.io = socketio(this.server, {
-      path: "/projects/bands/socket.io",
+      // path: "/projects/bands/socket.io", // LOCAL
+      path: "/projects/concurso-server/socket.io", // PRO
       cors: {
         origin: "*",
       },
@@ -35,6 +36,10 @@ class Server {
     //   console.log(`__dirname`, __dirname);
     //   res.sendFile(__dirname + "/index.html");
     // });
+
+    this.app.get("/projects/concurso-server", (res, req) => {
+      res.send("ok");
+    });
 
     this.app.use(cors());
   }
