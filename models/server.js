@@ -38,7 +38,7 @@ class Server {
     // });
 
     this.app.get("/projects/concurso-server", (req, res) => {
-      res.send("ok");
+      res.send("ok ok");
     });
 
     this.app.use(cors());
