@@ -37,7 +37,7 @@ class Server {
     //   res.sendFile(__dirname + "/index.html");
     // });
 
-    this.app.get("/projects/concurso-server", (res, req) => {
+    this.app.get("/projects/concurso-server", (req, res) => {
       res.send("ok");
     });
 
