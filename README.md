@@ -1,3 +1,2 @@
 # socket-concurso-server-node
-
-## Servidor node implementando sockets
+### Servidor node implementando sockets
